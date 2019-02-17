@@ -1,11 +1,6 @@
 import java.util.Scanner;
 
 public class HomeTask1_4 {
-
-	//Разработайте программу, которая проверяет, что цифры четырёхзначного
-	//числа N образуют возрастающую (убывающую) последовательность (к примеру,
-	//число 1357 удовлетворяет условию, т.к. его цифры соответствуют следующему
-	//неравенству: 1 < 3 < 5 < 7, т.е. идут в порядке возрастания).
 	
 	public static void main(String[] args) {
 		int[] num = new int[4];
@@ -23,21 +18,25 @@ public class HomeTask1_4 {
 			d1/=10;
 			d2=10;
 		}
-		for	(int i=0; i<num.length-1; i++) {
-			if (num[i]>num[i+1]) {				
+		int counter = 0;
+		while ((down || up) && counter<=2) {
+					
+			if (num[counter]>num[counter+1]) {				
 			} else {
 				down = false;
 			}
-			if (num[i]<num[i+1]) {				
+			if (num[counter]<num[counter+1]) {				
 			} else {
 				up = false;
-			}			
+			}
+			counter++;
+			//ГЌГҐ Г§Г­Г Гѕ, ГЄГ ГЄ ГҐГ№Вё Г¬Г®Г¦Г­Г® ГЎГ»Г«Г® Г±Г¤ГҐГ«Г ГІГј..
 		}
 		
-		if (up==true) {
+		if (up) {
 			System.out.println("The digits of the number form an increasing sequence");
 		} else {
-			if (down==true) {
+			if (down) {
 				System.out.println("The digits of the number form a decreasing sequence");
 			} else {
 				System.out.println("Numbers do not form a sequence");
