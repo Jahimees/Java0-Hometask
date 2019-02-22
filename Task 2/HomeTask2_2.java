@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -11,29 +12,33 @@ public class HomeTask2_2 {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		try {		
-			
-			while (number<1 || a<1 || b<1) {
-			System.out.println("Input a natural number");
-			number = scan.nextInt();			
-			System.out.println("Input a");
-			a = scan.nextInt();
-			System.out.println("Input b");
-			b = scan.nextInt();
+		while (number<1 || a<1 || b<1) {
+			try {				
+				System.out.println("Input a natural number");				
+				number = scan.nextInt();			
+				System.out.println("Input a");
+				a = scan.nextInt();
+				System.out.println("Input b");
+				b = scan.nextInt();
+			} catch (InputMismatchException e) {
+				System.out.println(e);
+				number = 0;
+				a = 0;
+				b = 0; //HELP! WHY AFTER REFRESHING THESE VALUES I AGAIN CATCH EXCEPTION IN CYCLE?! 
+					   //Just try input not number 
 			}
-		} catch (InputMismatchException e) {
-			System.out.println("It sould be a number");
 		}
+		
 		
 		System.out.println("Max digit in number is " + findMaxDigit(number));
 		System.out.println("number is palindrome? " + isPalindrome(number));
 		System.out.println("number is simple? " + isSimple(number));
-		System.out.print("Simple dividers: ");
-		outputSimpleDividers(number);
-		System.out.println("\nCount of unique digits: "+uniqueDigitsCount(number));
-		System.out.println("\n");		
-		System.out.println("Least common multiple of a and b: "+lcm(a,b));
+		System.out.println("Simple dividers: " + simpleDividers(number).toString());
+		System.out.println("Count of unique digits: "+uniqueDigitsCount(number));	
+		System.out.println("\nLeast common multiple of a and b: "+lcm(a,b));
 		System.out.println("Smallest common multiple of a and b: "+scm(a,b));
+		
+		scan.close();
 	}
 
 	///////////////////////////MAX DIGIT method///////////////////////////
@@ -79,14 +84,16 @@ public class HomeTask2_2 {
 	}
 	
 	///////////////////////////SIMPLE DIVIDERS method///////////////////////////
-	public static void outputSimpleDividers(int number) {		
+	public static ArrayList<Integer> simpleDividers(int number) {		
+		ArrayList<Integer> result = new ArrayList<Integer>(); //i know, that i can't use arrays, but what i should return here?
 		for (int i=1; i<=number; i++) {
 			if (number%i==0) {
 				if (isSimple(i)) {
-					System.out.print(i+"; ");
+					result.add(i);
 				}
 			}
 		}
+		return result;
 	}
 	
 	///////////////////////////find LCM///////////////////////////
@@ -107,12 +114,11 @@ public class HomeTask2_2 {
 	public static int scm(int a, int b) {
 		int scm = 0;
 		int biggest = a>b? a:b;
-		int i = biggest;
 		while (scm==0) {
-			if (i%a==0 && i%b==0) {
-				scm = i;
+			if (biggest%a==0 && biggest%b==0) {
+				scm = biggest;
 			}
-			i++;
+			biggest++;
 		}
 		return scm;
 	}
@@ -120,10 +126,10 @@ public class HomeTask2_2 {
 	///////////////////////////count of unique digits///////////////////
 	public static int uniqueDigitsCount(int number) {
 		String numberStr = String.valueOf(number);
-		HashSet digits = new HashSet();
+		HashSet digits = new HashSet();  //I know, that it's wrong, but i think, that it's interesting solution
 		for (int i=0; i<numberStr.length(); i++) {
 			digits.add(numberStr.charAt(i));
 		}
-		return digits.size();
+		return digits.size(); 
 	}
 }
