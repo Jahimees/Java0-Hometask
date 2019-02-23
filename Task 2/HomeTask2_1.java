@@ -19,7 +19,7 @@ public class HomeTask2_1 {
 		
 		for (int i=0; i<count; i++) {
 			Random rand = new Random();
-			if (rand.nextInt(2)==1) {
+			if (rand.nextBoolean()==true) {
 				heads++;
 			} else {
 				tails++;
