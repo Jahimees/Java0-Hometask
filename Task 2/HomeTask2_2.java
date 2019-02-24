@@ -100,12 +100,11 @@ public class HomeTask2_2 {
 	public static int lcm(int a, int b) {
 		int lcm = 0;
 		int smallest = a<b? a:b;
-		int i = smallest;
 		while (lcm==0) {
-			if (a%i==0 && b%i==0) {
-				lcm = i;
+			if (a%smallest==0 && b%smallest==0) {
+				lcm = smallest;
 			}
-			i--;
+			smallest--;
 		}
 		return lcm;
 	}
