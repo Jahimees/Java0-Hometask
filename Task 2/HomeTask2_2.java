@@ -36,7 +36,7 @@ public class HomeTask2_2 {
 		System.out.println("Simple dividers: " + simpleDividers(number).toString());
 		System.out.println("Count of unique digits: "+uniqueDigitsCount(number));	
 		System.out.println("\nLeast common multiple of a and b: "+lcm(a,b));
-		System.out.println("Smallest common multiple of a and b: "+scm(a,b));
+		System.out.println("Greatest common divisor of a and b: "+gcd(a,b));
 		
 		scan.close();
 	}
@@ -96,30 +96,30 @@ public class HomeTask2_2 {
 		return result;
 	}
 	
-	///////////////////////////find LCM///////////////////////////
-	public static int lcm(int a, int b) {
-		int lcm = 0;
+	///////////////////////////find GCD///////////////////////////
+	public static int gcd(int a, int b) {
+		int gcd = 0;
 		int smallest = a<b? a:b;
-		while (lcm==0) {
+		while (gcd==0) {
 			if (a%smallest==0 && b%smallest==0) {
-				lcm = smallest;
+				gcd = smallest;
 			}
 			smallest--;
 		}
-		return lcm;
+		return gcd;
 	}
 	
-	///////////////////////////find SCM///////////////////////////
-	public static int scm(int a, int b) {
-		int scm = 0;
+	///////////////////////////find LCM///////////////////////////
+	public static int lcm(int a, int b) {
+		int lcm = 0;
 		int biggest = a>b? a:b;
-		while (scm==0) {
+		while (lcm==0) {
 			if (biggest%a==0 && biggest%b==0) {
-				scm = biggest;
+				lcm = biggest;
 			}
 			biggest++;
 		}
-		return scm;
+		return lcm;
 	}
 	
 	///////////////////////////count of unique digits///////////////////
