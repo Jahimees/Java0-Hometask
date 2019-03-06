@@ -1,12 +1,16 @@
 import java.io.*;
 
+import org.apache.log4j.Logger;
+
 import Factories.*;
 import Toys.Toy.Size;
 
 public class ReaderFromTxt {
 	private BufferedReader reader;
-		
+	private static final Logger log = Logger.getLogger(ReaderFromTxt.class);
+	
 	public GameRoom readFromFile(String path) throws IOException, IllegalArgumentException, WrongFactoryException {		
+		log.info("Trying connect to file...");
 		reader = new BufferedReader(new FileReader(path));	
 		
 		String nextLine;
@@ -41,7 +45,8 @@ public class ReaderFromTxt {
 		}
 		while (sickString.charAt(sickString.length()-1)=='!') {
 			sickString = sickString.substring(0, sickString.length()-1);
-		}
+		}		
+		log.info("Extra tokens was deleted");
 		return sickString;
 	}
 		
@@ -51,7 +56,11 @@ public class ReaderFromTxt {
 			case "ball": return new BallFactory();
 			case "cube": return new CubeFactory();
 			case "car": return new CarFactory();
-			default: throw new WrongFactoryException(typeFactory);
+			default: {
+				log.error("factory "+typeFactory+" doesn't exist");	
+				throw new WrongFactoryException(typeFactory); 			
+			}
 		}
 	}
+
 }

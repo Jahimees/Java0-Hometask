@@ -2,9 +2,12 @@
 import java.util.ArrayList;
 import java.util.Comparator;
 
+import org.apache.log4j.Logger;
+
 import Toys.*;
 import Toys.Toy.Size;
 public class GameRoom {
+	private static final Logger log = Logger.getLogger(GameRoom.class);
 	private ArrayList<Toy> toysList = new ArrayList<Toy>();
 	private double balance;	
 	
@@ -12,9 +15,10 @@ public class GameRoom {
 	public void add(Toy toy) {
 		if (balance - toy.getCost() >= 0) {
 			toysList.add(toy);
+			log.info("Toy "+toy+" was puted to list");
 			setBalance(getBalance()-toy.getCost()); //change balance
-		} else {
-			System.out.println("Warning! "+toy.toString()+" will not put to list. Balance is over");			
+		} else {	
+			log.warn(toy.toString()+" can't be puted to list. Balance is over");
 		}
 	}
 	
@@ -34,16 +38,19 @@ public class GameRoom {
 	//Just by name
 	public void sortByName() {
 		toysList.sort(comparingByName);
+		log.info("successful");
 	}
 	
 	//by Cost → Name
 	public void sortByCost() {
 		toysList.sort(comparingByCost.thenComparing(comparingByName));
+		log.info("successful");
 	}
 	
 	//by Size → Name
 	public void sortBySize() {
 		toysList.sort(comparingBySize.thenComparing(comparingByName));
+		log.info("successful");
 	}
 	
 	public void insertSortByName() {
@@ -54,6 +61,7 @@ public class GameRoom {
 					toysList.set(j, tempToy);
 			}
 		}
+		log.info("successful");
 	}
 	
 	
@@ -65,6 +73,7 @@ public class GameRoom {
 				returnList.add(toysList.get(i));
 			}
 		}
+		log.info("Searching by size was complete successful");
 		return returnList;
 	}
 	
@@ -75,6 +84,7 @@ public class GameRoom {
 				returnList.add(toysList.get(i));
 			}
 		}
+		log.info("Searching by name was complete successful");
 		return returnList;
 	}
 	
@@ -85,6 +95,7 @@ public class GameRoom {
 				returnList.add(toysList.get(i));				
 			}
 		}
+		log.info("Searching by cost was complete successful");
 		return returnList;
 	}
 	

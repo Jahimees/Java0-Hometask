@@ -1,6 +1,9 @@
 package Toys;
 
+import org.apache.log4j.Logger;
+
 public abstract class Toy {
+	private static final Logger log = Logger.getLogger(Toy.class);
 	public enum Size {SMALL, AVERAGE, BIG};
 	private Size size;
 	private String name;
@@ -19,7 +22,7 @@ public abstract class Toy {
 	}
 	public void setName(String name) {
 		if (name.equals("")) {
-			System.out.println("Name can't be empty. Set default: 'no name'");
+			log.warn("Input name was empty. Set default: 'no name'");
 			this.name = "no name";
 		}
 		this.name = name;
@@ -33,7 +36,7 @@ public abstract class Toy {
 			this.cost = cost;
 		} else {
 			this.cost = 100;
-			System.out.println(this.getName()+" has a negative value. Default cost = 100");
+			log.warn("Input cost had a negative value. Set default cost = 100");
 		}
 	}
 	
@@ -47,5 +50,6 @@ public abstract class Toy {
 		this.setName(name);
 		this.setCost(cost);
 		this.setSize(size);
+		log.info("Toy "+name+" was successful created!");
 	}
 }
