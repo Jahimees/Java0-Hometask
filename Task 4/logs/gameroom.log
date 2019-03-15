@@ -1,0 +1,166 @@
+
+20:37:56,758  INFO main ReaderFromTxt:readFromFile:15 - Trying connect to file...
+20:37:56,768  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:37:56,768  INFO main Toy:<init>:53 - Toy nyasd was successful created!
+20:37:56,768  INFO main GameRoom:add:15 - Toy class Entity.Toys.DollToy, name: nyasd, cost: 34.0, size: SMALL was puted to list
+20:37:56,768  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:37:56,778  INFO main Toy:<init>:53 - Toy Anastasya was successful created!
+20:37:56,778  INFO main GameRoom:add:15 - Toy class Entity.Toys.BallToy, name: Anastasya, cost: 100.0, size: BIG was puted to list
+20:37:56,778  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:37:56,778  INFO main Toy:<init>:53 - Toy Вася was successful created!
+20:37:56,778  INFO main GameRoom:add:15 - Toy class Entity.Toys.CubeToy, name: Вася, cost: 100.0, size: AVERAGE was puted to list
+20:37:56,778  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:37:56,778  INFO main Toy:<init>:53 - Toy KVAS was successful created!
+20:37:56,778  INFO main GameRoom:add:15 - Toy class Entity.Toys.CubeToy, name: KVAS, cost: 123.0, size: SMALL was puted to list
+20:37:56,778  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:37:56,778  INFO main Toy:<init>:53 - Toy Аркадий was successful created!
+20:37:56,778  INFO main GameRoom:add:15 - Toy class Entity.Toys.CarToy, name: Аркадий, cost: 12.0, size: BIG was puted to list
+20:37:56,778  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:37:56,778  WARN main Toy:setName:25 - Input name was empty. Set default: 'no name'
+20:37:56,778  WARN main Toy:setCost:39 - Input cost had a negative value. Set default cost = 100
+20:37:56,778  INFO main Toy:<init>:53 - Toy  was successful created!
+20:37:56,778  INFO main GameRoom:add:15 - Toy class Entity.Toys.CarToy, name: , cost: 100.0, size: AVERAGE was puted to list
+20:37:56,778  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:37:56,778  INFO main Toy:<init>:53 - Toy Ангелина was successful created!
+20:37:56,778  WARN main GameRoom:add:18 - class Entity.Toys.DollToy, name: Ангелина, cost: 10000.0, size: SMALL can't be puted to list. Balance is over
+20:37:56,845  INFO main Sorting:sortBySize:30 - successful
+20:37:56,846  INFO main Sorting:sortByCost:24 - successful
+20:37:56,846  INFO main Sorting:insertSortByName:41 - successful
+20:37:56,847  INFO main Sorting:sortByName:18 - successful
+20:37:56,847  INFO main SortValidation:go:23 - Sorting validation ends successful
+20:37:56,848  INFO main Searching:findBy:19 - Searching by size was complete successful
+20:37:56,848  INFO main Searching:findBy:30 - Searching by name was complete successful
+20:37:56,848  INFO main Searching:findBy:41 - Searching by cost was complete successful
+20:37:56,848  INFO main SearchValidation:go:17 - Search validation ends successful
+20:42:07,838  INFO main ReaderFromTxt:readFromFile:15 - Trying connect to file...
+20:42:07,842  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:42:07,848  INFO main Toy:<init>:53 - Toy nyasd was successful created!
+20:42:07,848  INFO main GameRoom:add:15 - Toy class Entity.Toys.DollToy, name: nyasd, cost: 34.0, size: SMALL was puted to list
+20:42:07,849  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:42:07,849  INFO main Toy:<init>:53 - Toy Anastasya was successful created!
+20:42:07,850  INFO main GameRoom:add:15 - Toy class Entity.Toys.BallToy, name: Anastasya, cost: 100.0, size: BIG was puted to list
+20:42:07,850  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:42:07,850  INFO main Toy:<init>:53 - Toy Вася was successful created!
+20:42:07,851  INFO main GameRoom:add:15 - Toy class Entity.Toys.CubeToy, name: Вася, cost: 100.0, size: AVERAGE was puted to list
+20:42:07,851  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:42:07,851  INFO main Toy:<init>:53 - Toy KVAS was successful created!
+20:42:07,851  INFO main GameRoom:add:15 - Toy class Entity.Toys.CubeToy, name: KVAS, cost: 123.0, size: SMALL was puted to list
+20:42:07,851  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:42:07,854  INFO main Toy:<init>:53 - Toy Аркадий was successful created!
+20:42:07,854  INFO main GameRoom:add:15 - Toy class Entity.Toys.CarToy, name: Аркадий, cost: 12.0, size: BIG was puted to list
+20:42:07,854  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:42:07,854  WARN main Toy:setName:25 - Input name was empty. Set default: 'no name'
+20:42:07,855  WARN main Toy:setCost:39 - Input cost had a negative value. Set default cost = 100
+20:42:07,855  INFO main Toy:<init>:53 - Toy  was successful created!
+20:42:07,855  INFO main GameRoom:add:15 - Toy class Entity.Toys.CarToy, name: , cost: 100.0, size: AVERAGE was puted to list
+20:42:07,855  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:42:07,855  INFO main Toy:<init>:53 - Toy Ангелина was successful created!
+20:42:07,855  WARN main GameRoom:add:18 - class Entity.Toys.DollToy, name: Ангелина, cost: 10000.0, size: SMALL can't be puted to list. Balance is over
+20:42:07,895  INFO main Sorting:sortBySize:30 - successful
+20:42:07,896  INFO main Sorting:sortByCost:24 - successful
+20:42:07,896  INFO main Sorting:insertSortByName:41 - successful
+20:42:07,897  INFO main Sorting:sortByName:18 - successful
+20:42:07,897  INFO main SortValidation:go:23 - Sorting validation ends successful
+20:42:07,898  INFO main Searching:findBy:19 - Searching by size was complete successful
+20:42:07,898  INFO main Searching:findBy:30 - Searching by name was complete successful
+20:42:07,898  INFO main Searching:findBy:41 - Searching by cost was complete successful
+20:42:07,898  INFO main SearchValidation:go:17 - Search validation ends successful
+20:42:44,626  INFO main ReaderFromTxt:readFromFile:15 - Trying connect to file...
+20:42:44,634  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:42:44,638  INFO main Toy:<init>:53 - Toy nyasd was successful created!
+20:42:44,639  INFO main GameRoom:add:15 - Toy class Entity.Toys.DollToy, name: nyasd, cost: 34.0, size: SMALL was puted to list
+20:42:44,639  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:42:44,641  INFO main Toy:<init>:53 - Toy Anastasya was successful created!
+20:42:44,641  INFO main GameRoom:add:15 - Toy class Entity.Toys.BallToy, name: Anastasya, cost: 100.0, size: BIG was puted to list
+20:42:44,642  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:42:44,644  INFO main Toy:<init>:53 - Toy Вася was successful created!
+20:42:44,644  INFO main GameRoom:add:15 - Toy class Entity.Toys.CubeToy, name: Вася, cost: 100.0, size: AVERAGE was puted to list
+20:42:44,645  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:42:44,645  INFO main Toy:<init>:53 - Toy KVAS was successful created!
+20:42:44,646  INFO main GameRoom:add:15 - Toy class Entity.Toys.CubeToy, name: KVAS, cost: 123.0, size: SMALL was puted to list
+20:42:44,646  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:42:44,648  INFO main Toy:<init>:53 - Toy Аркадий was successful created!
+20:42:44,648  INFO main GameRoom:add:15 - Toy class Entity.Toys.CarToy, name: Аркадий, cost: 12.0, size: BIG was puted to list
+20:42:44,649  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:42:44,649  WARN main Toy:setName:25 - Input name was empty. Set default: 'no name'
+20:42:44,650  WARN main Toy:setCost:39 - Input cost had a negative value. Set default cost = 100
+20:42:44,650  INFO main Toy:<init>:53 - Toy  was successful created!
+20:42:44,651  INFO main GameRoom:add:15 - Toy class Entity.Toys.CarToy, name: , cost: 100.0, size: AVERAGE was puted to list
+20:42:44,651  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:42:44,652  INFO main Toy:<init>:53 - Toy Ангелина was successful created!
+20:42:44,652  WARN main GameRoom:add:18 - class Entity.Toys.DollToy, name: Ангелина, cost: 10000.0, size: SMALL can't be puted to list. Balance is over
+20:42:44,703  INFO main Sorting:sortBySize:30 - successful
+20:42:44,704  INFO main Sorting:sortByCost:24 - successful
+20:42:44,704  INFO main Sorting:insertSortByName:41 - successful
+20:42:44,704  INFO main Sorting:sortByName:18 - successful
+20:42:44,704  INFO main SortValidation:go:23 - Sorting validation ends successful
+20:42:44,705  INFO main Searching:findBy:19 - Searching by size was complete successful
+20:42:44,705  INFO main Searching:findBy:30 - Searching by name was complete successful
+20:42:44,706  INFO main Searching:findBy:41 - Searching by cost was complete successful
+20:42:44,706  INFO main SearchValidation:go:17 - Search validation ends successful
+20:45:30,159  INFO main ReaderFromTxt:readFromFile:15 - Trying connect to file...
+20:45:30,162  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:45:30,163  INFO main Toy:<init>:53 - Toy nyasd was successful created!
+20:45:30,163  INFO main GameRoom:add:15 - Toy class Entity.Toys.DollToy, name: nyasd, cost: 34.0, size: SMALL was puted to list
+20:45:30,163  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:45:30,164  INFO main Toy:<init>:53 - Toy Anastasya was successful created!
+20:45:30,164  INFO main GameRoom:add:15 - Toy class Entity.Toys.BallToy, name: Anastasya, cost: 100.0, size: BIG was puted to list
+20:45:30,164  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:45:30,165  INFO main Toy:<init>:53 - Toy Вася was successful created!
+20:45:30,165  INFO main GameRoom:add:15 - Toy class Entity.Toys.CubeToy, name: Вася, cost: 100.0, size: AVERAGE was puted to list
+20:45:30,165  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:45:30,166  INFO main Toy:<init>:53 - Toy KVAS was successful created!
+20:45:30,166  INFO main GameRoom:add:15 - Toy class Entity.Toys.CubeToy, name: KVAS, cost: 123.0, size: SMALL was puted to list
+20:45:30,166  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:45:30,167  INFO main Toy:<init>:53 - Toy Аркадий was successful created!
+20:45:30,168  INFO main GameRoom:add:15 - Toy class Entity.Toys.CarToy, name: Аркадий, cost: 12.0, size: BIG was puted to list
+20:45:30,168  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:45:30,168  WARN main Toy:setName:26 - Input name was empty. Set default: 'no name'
+20:45:30,169  WARN main Toy:setCost:39 - Input cost had a negative value. Set default cost = 100
+20:45:30,169  INFO main Toy:<init>:53 - Toy  was successful created!
+20:45:30,169  INFO main GameRoom:add:15 - Toy class Entity.Toys.CarToy, name: , cost: 100.0, size: AVERAGE was puted to list
+20:45:30,169  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:45:30,169  INFO main Toy:<init>:53 - Toy Ангелина was successful created!
+20:45:30,170  WARN main GameRoom:add:18 - class Entity.Toys.DollToy, name: Ангелина, cost: 10000.0, size: SMALL can't be puted to list. Balance is over
+20:45:30,208  INFO main Sorting:sortBySize:30 - successful
+20:45:30,209  INFO main Sorting:sortByCost:24 - successful
+20:45:30,209  INFO main Sorting:insertSortByName:41 - successful
+20:45:30,210  INFO main Sorting:sortByName:18 - successful
+20:45:30,210  INFO main SortValidation:go:23 - Sorting validation ends successful
+20:45:30,211  INFO main Searching:findBy:19 - Searching by size was complete successful
+20:45:30,211  INFO main Searching:findBy:30 - Searching by name was complete successful
+20:45:30,211  INFO main Searching:findBy:41 - Searching by cost was complete successful
+20:45:30,211  INFO main SearchValidation:go:17 - Search validation ends successful
+20:46:02,370  INFO main ReaderFromTxt:readFromFile:15 - Trying connect to file...
+20:46:02,377  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:46:02,381  INFO main Toy:<init>:54 - Toy nyasd was successful created!
+20:46:02,382  INFO main GameRoom:add:15 - Toy class Entity.Toys.DollToy, name: nyasd, cost: 34.0, size: SMALL was puted to list
+20:46:02,383  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:46:02,384  INFO main Toy:<init>:54 - Toy Anastasya was successful created!
+20:46:02,385  INFO main GameRoom:add:15 - Toy class Entity.Toys.BallToy, name: Anastasya, cost: 100.0, size: BIG was puted to list
+20:46:02,385  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:46:02,387  INFO main Toy:<init>:54 - Toy Вася was successful created!
+20:46:02,388  INFO main GameRoom:add:15 - Toy class Entity.Toys.CubeToy, name: Вася, cost: 100.0, size: AVERAGE was puted to list
+20:46:02,388  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:46:02,388  INFO main Toy:<init>:54 - Toy KVAS was successful created!
+20:46:02,389  INFO main GameRoom:add:15 - Toy class Entity.Toys.CubeToy, name: KVAS, cost: 123.0, size: SMALL was puted to list
+20:46:02,389  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:46:02,390  INFO main Toy:<init>:54 - Toy Аркадий was successful created!
+20:46:02,390  INFO main GameRoom:add:15 - Toy class Entity.Toys.CarToy, name: Аркадий, cost: 12.0, size: BIG was puted to list
+20:46:02,391  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:46:02,391  WARN main Toy:setName:26 - Input name was empty. Set default: 'no name'
+20:46:02,391  WARN main Toy:setCost:40 - Input cost had a negative value. Set default cost = 100
+20:46:02,391  INFO main Toy:<init>:54 - Toy  was successful created!
+20:46:02,392  INFO main GameRoom:add:15 - Toy class Entity.Toys.CarToy, name: no name, cost: 100.0, size: AVERAGE was puted to list
+20:46:02,392  INFO main ReaderFromTxt:deleteExtraTokens:51 - Extra tokens was deleted
+20:46:02,392  INFO main Toy:<init>:54 - Toy Ангелина was successful created!
+20:46:02,393  WARN main GameRoom:add:18 - class Entity.Toys.DollToy, name: Ангелина, cost: 10000.0, size: SMALL can't be puted to list. Balance is over
+20:46:02,445  INFO main Sorting:sortBySize:30 - successful
+20:46:02,445  INFO main Sorting:sortByCost:24 - successful
+20:46:02,446  INFO main Sorting:insertSortByName:41 - successful
+20:46:02,446  INFO main Sorting:sortByName:18 - successful
+20:46:02,446  INFO main SortValidation:go:23 - Sorting validation ends successful
+20:46:02,447  INFO main Searching:findBy:19 - Searching by size was complete successful
+20:46:02,447  INFO main Searching:findBy:30 - Searching by name was complete successful
+20:46:02,447  INFO main Searching:findBy:41 - Searching by cost was complete successful
+20:46:02,448  INFO main SearchValidation:go:17 - Search validation ends successful
